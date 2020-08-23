@@ -41,11 +41,7 @@ html {
 }
 ```
 
-
-## Front-End Resources (Free)
-Here are some links to useful resources to learn specific tools to help you improve your front-end development skills.
-
-### CSS Layout Tools
+### CSS Grid/Flexbox
 CSS grid/flexbox are two modern layout systems that are a must know for developers these days. The two free courses below helped me get a good grasp on them and they might help you too.
 
 🔗 - [CSS Flexbox Scrimba Course](https://scrimba.com/g/gR8PTE?utm_source=dev.to&utm_medium=referral&utm_campaign=gR8PTE_grid_vs_flexbox)
