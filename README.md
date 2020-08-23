@@ -6,7 +6,7 @@ Here are some quick start tips/resources I personally wish I had been aware of w
 
 Browsers like Chrome, Firefox, Internet Explorer etc. can have different default CSS rules for certain elements. Due to this if you are not careful you can have things look good on one browser but weird on another. 
 
-**CSS resets** help solve this problem by essentially stripping away the browsers default CSS rules so your site looks as consistent as possible across browsers. 
+CSS resets help solve this problem by essentially stripping away the browsers default CSS rules so your site looks as consistent as possible across browsers. 
 
 🔗 - [Read this really in-depth article if you want to learn more](https://medium.com/@riittagirl/a-tale-of-css-resets-and-everything-you-need-to-know-about-them-781849d9b7f2)
 
