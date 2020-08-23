@@ -2,7 +2,9 @@
 Here are some quick start tips/resources I personally wish I had been aware of when I first started my journey into the world of front-end development. I am assuming you already know the basics and made a simple project or two. If you are an absolute beginner I go more in depth of how to get started from zero in my blog post here.
 
 
-## CSS ResetsBrowsers like Chrome, Firefox, Internet Explorer etc. can have different default CSS rules for certain elements. Due to this if you are not careful you can have things look good on one browser but weird on another. 
+## CSS Resets
+
+Browsers like Chrome, Firefox, Internet Explorer etc. can have different default CSS rules for certain elements. Due to this if you are not careful you can have things look good on one browser but weird on another. 
 
 **CSS resets** help solve this problem by essentially stripping away the browsers default CSS rules so your site looks as consistent as possible across browsers. 
 
