@@ -1,8 +1,6 @@
 # Frontend-Starter-Kit (WIP) 🚀 
 Here are some quick start tips/resources I personally wish I had been aware of when I first started my journey into the world of front-end development. I am assuming you already know the basics and made a simple project or two. If you are an absolute beginner I go more in depth of how to get started from zero in my blog post here.
 
-## Front-End Resources (Free)
-Here are some links to useful resources to 
 
 ## CSS ResetsBrowsers like Chrome, Firefox, Internet Explorer etc. can have different default CSS rules for certain elements. Due to this if you are not careful you can have things look good on one browser but weird on another. 
 
@@ -40,6 +38,11 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 ```
+
+
+## Front-End Resources (Free)
+Here are some links to useful resources to learn specific tools to help you improve your front-end development skills.
+
 ### CSS Layout Tools
 CSS grid/flexbox are two modern layout systems that are a must know for developers these days. The two free courses below helped me get a good grasp on them and they might help you too.
 
