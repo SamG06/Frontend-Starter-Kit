@@ -40,6 +40,106 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 ```
+## Making Api Request
+
+### XMLHttpRequest (Supported By Older Browsers)
+
+#### Get Request Example
+```js
+const xhr = new XMLHttpRequest();
+// Make a get request to retrieve some fake JSON for testing
+xhr.open('GET', 'https://jsonplaceholder.typicode.com/posts');
+
+// If you want to send/receive credentials like cookies
+xhr.withCredentials = true;
+xhr.send();
+xhr.onload = () => {
+  console.log(xhr);
+  if(xhr.status === 200){
+    console.log(JSON.parse(xhr.response));
+  }  else  {
+    console.log('It didn\'t work D:', xhr.status, xhr.statusText)
+  }
+}
+```
+
+#### Post Request Example
+
+```js 
+const xhr = new XMLHttpRequest;
+xhr.open('POST', 'https://example.com/login');
+xhr.withCredentials = true;
+xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+xhr.send(JSON.stringify({username: "Sam123", password: "secretpa$$word123"}));
+xhr.onload = () => console.log(xhr.response);
+```
+
+[MDN - XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest)
+
+[Javscript.info - XMLHttpRequest](https://javascript.info/xmlhttprequest)
+
+### Fetch
+
+#### Get Request Example
+
+```js
+fetch('https://jsonplaceholder.typicode.com/posts')
+.then(response => {
+  return response.json();
+})
+.then(data => {
+  console.log(data);
+})
+```
+#### Post Request Example
+```js
+fetch('https://example.com/login', {
+  method: 'POST',
+  credentials: 'include',
+  headers: {
+    'Content-Type': 'application/json;charset=UTF-8',
+  },
+  body: JSON.stringify({username: "Sam123", password: "secretpa$$word123"});
+})
+.then(response => {
+  return response.json();
+})
+.then(data => {
+  console.log(data);
+})
+```
+[MDN - Fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
+
+[Javascript.info - Fetch](https://javascript.info/fetch)
+
+#### Sending Form Data
+```html
+<form onsubmit="return login(event)">
+  <label>
+    Username:
+    <input type="text" name="username">
+  </label>
+  <label> 
+    Password: 
+    <input type="text" name="password">
+  </label>
+</form>
+
+<script>
+  const login = async (e) => {
+    e.preventDefault();
+    const loginForm = document.querySelector('form');
+    const formData = new FormData(loginForm);
+    const response = await fetch('https://example.com/login', { method: 'POST', credentials: 'include', body: formData });
+    const data = await response.json();
+    console.log(data);
+    return false;
+  }
+</script>
+```
+[MDN - FormData](https://developer.mozilla.org/en-US/docs/Web/API/FormData)
+
+[Javascript.info - FormData](https://javascript.info/formdata)
 
 ### CSS Grid/Flexbox
 CSS grid/flexbox are two modern layout systems that are a must know for developers these days. The two free courses below helped me get a good grasp on them and they might help you too.
